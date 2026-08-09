@@ -3,168 +3,290 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Antonette Hatamosa | Computer Engineering Portfolio</title>
+  <title>Antonette P. Hatamosa | Computer Engineering Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    .glow { box-shadow: 0 0 20px rgba(16, 185, 129, 0.15); }
+  </style>
 </head>
-<body class="bg-slate-900 text-slate-100 font-sans leading-relaxed">
+<body class="bg-slate-950 text-slate-100 font-sans leading-relaxed selection:bg-emerald-500 selection:text-slate-950">
 
-  <!-- Navigation -->
-  <nav class="max-w-5xl mx-auto p-6 flex justify-between items-center">
-    <span class="text-xl font-bold tracking-wider text-emerald-400">AH.cpe</span>
-    <div class="space-x-6 text-sm font-medium">
+  <!-- Header / Navigation -->
+  <nav class="max-w-6xl mx-auto p-6 flex justify-between items-center sticky top-0 bg-slate-950/90 backdrop-blur-md z-50 border-b border-slate-800/80">
+    <div class="flex items-center gap-3">
+      <!-- Monogram Logo Placeholder -->
+      <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/40 flex items-center justify-center font-bold text-emerald-400 font-mono text-xl">
+        AH
+      </div>
+      <span class="font-bold tracking-wider text-slate-200 hidden sm:inline">ANTONETTE HATAMOSA</span>
+    </div>
+    <div class="space-x-6 text-sm font-medium text-slate-300">
       <a href="#about" class="hover:text-emerald-400 transition">About</a>
       <a href="#projects" class="hover:text-emerald-400 transition">Projects</a>
       <a href="#skills" class="hover:text-emerald-400 transition">Skills</a>
+      <a href="#experience" class="hover:text-emerald-400 transition">Experience</a>
       <a href="#contact" class="hover:text-emerald-400 transition">Contact</a>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section id="about" class="max-w-5xl mx-auto px-6 py-16">
-    <p class="text-emerald-400 font-mono text-sm mb-2">Hello, I'm</p>
-    <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4">Antonette Hatamosa</h1>
-    <h2 class="text-2xl md:text-3xl font-semibold text-slate-400 mb-6">BS Computer Engineering Student</h2>
-    <p class="text-slate-300 max-w-2xl text-lg mb-8">
-      Aspiring Computer Engineering Intern specializing in AI computer vision, embedded systems/IoT, and full-stack software development. Combining hardware troubleshooting expertise (Tier 3 Tech Support) with algorithmic problem solving.
-    </p>
-    <div class="flex gap-4">
-      <a href="#projects" class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-6 py-3 rounded-lg transition">View Projects</a>
-      <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" class="border border-slate-700 hover:border-emerald-400 px-6 py-3 rounded-lg flex items-center gap-2 transition">
-        <i class="fab font-xl fa-github"></i> GitHub Profile
-      </a>
+  <section id="about" class="max-w-6xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-12 gap-12 items-center">
+    <div class="md:col-span-8">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-mono text-xs mb-6">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        Seeking BS Computer Engineering Internship
+      </div>
+      <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4 tracking-tight">
+        Antonette P. Hatamosa
+      </h1>
+      <h2 class="text-xl md:text-2xl font-semibold text-emerald-400 mb-6 font-mono">
+        Engineering Logic Meets Creative Vision.
+      </h2>
+      <p class="text-slate-300 text-lg mb-8 max-w-2xl leading-relaxed">
+        Computer Engineering undergraduate combining expertise in <strong>AI computer vision</strong>, <strong>embedded systems/IoT</strong>, and <strong>software architectures</strong> with a background in Tier 3 technical support, QA analysis, and technical media design.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#projects" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-6 py-3 rounded-lg transition">
+          View Technical Projects
+        </a>
+        <a href="#experience" class="border border-slate-700 hover:border-emerald-400 px-6 py-3 rounded-lg flex items-center gap-2 transition text-slate-300">
+          Career Journey
+        </a>
+      </div>
+    </div>
+
+    <!-- Profile Image Container -->
+    <div class="md:col-span-4 flex justify-center">
+      <div class="relative group">
+        <div class="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+        <img src="your-photo.jpg" alt="Antonette Hatamosa" class="relative rounded-2xl w-64 h-80 object-cover border-2 border-slate-700 bg-slate-800" onerror="this.src='https://via.placeholder.com/300x400?text=Antonette+Hatamosa'"/>
+      </div>
     </div>
   </section>
 
-  <!-- Featured Projects -->
-  <section id="projects" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-800">
-    <h2 class="text-3xl font-bold mb-8 text-white"><span class="text-emerald-400">01.</span> Featured Engineering Projects</h2>
+  <!-- Technical Stack Icons Banner -->
+  <section class="border-y border-slate-800/80 bg-slate-900/40 py-8">
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="text-xs font-mono uppercase tracking-widest text-slate-400 text-center mb-6">Technologies & Frameworks</p>
+      <div class="flex flex-wrap justify-center items-center gap-8 text-2xl text-slate-400">
+        <span class="flex items-center gap-2 text-sm font-mono bg-slate-800/60 px-3 py-1.5 rounded border border-slate-700"><i class="fab fa-cuttlefish text-blue-400"></i> C++</span>
+        <span class="flex items-center gap-2 text-sm font-mono bg-slate-800/60 px-3 py-1.5 rounded border border-slate-700"><i class="fab fa-java text-orange-400"></i> Java</span>
+        <span class="flex items-center gap-2 text-sm font-mono bg-slate-800/60 px-3 py-1.5 rounded border border-slate-700"><i class="fab fa-python text-yellow-400"></i> Python</span>
+        <span class="flex items-center gap-2 text-sm font-mono bg-slate-800/60 px-3 py-1.5 rounded border border-slate-700"><i class="fab fa-raspberry-pi text-red-500"></i> Raspberry Pi</span>
+        <span class="flex items-center gap-2 text-sm font-mono bg-slate-800/60 px-3 py-1.5 rounded border border-slate-700"><i class="fas fa-microchip text-emerald-400"></i> Arduino</span>
+        <span class="flex items-center gap-2 text-sm font-mono bg-slate-800/60 px-3 py-1.5 rounded border border-slate-700"><i class="fas fa-database text-blue-500"></i> SQL</span>
+        <span class="flex items-center gap-2 text-sm font-mono bg-slate-800/60 px-3 py-1.5 rounded border border-slate-700"><i class="fas fa-chart-bar text-green-400"></i> Data Analytics</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Engineering Projects -->
+  <section id="projects" class="max-w-6xl mx-auto px-6 py-20">
+    <h2 class="text-3xl font-bold mb-2 text-white">Featured Engineering Projects</h2>
+    <p class="text-slate-400 mb-12">Hardware integration, algorithm design, and software system architectures.</p>
     
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-      <!-- Project 1: CNN Pigpen Cleaner -->
-      <div class="bg-slate-800/60 border border-slate-700 p-6 rounded-xl hover:border-emerald-500/50 transition">
-        <div class="flex justify-between items-start mb-4">
-          <h3 class="text-xl font-bold text-white">Automated CNN Excrement Detection & Cleaning System</h3>
-          <span class="text-xs bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2 py-1 rounded">Computer Vision / IoT</span>
+      <!-- Project 1: CNN Pigpen Excrement Cleaner -->
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col justify-between hover:border-emerald-500/50 transition glow">
+        <div>
+          <div class="h-48 bg-slate-800 rounded-lg mb-6 overflow-hidden border border-slate-700 flex items-center justify-center">
+            <img src="project-cnn.jpg" alt="CNN Pigpen Cleaner" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/600x400?text=CNN+Pigpen+Excrement+Cleaner'"/>
+          </div>
+          <span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/20">Computer Vision & IoT</span>
+          <h3 class="text-xl font-bold text-white mt-3 mb-2">CNN-Based Pigpen Excrement Cleaner</h3>
+          <p class="text-slate-300 text-sm mb-4">
+            Automated agricultural sanitation system utilizing Convolutional Neural Networks (CNN) for real-time waste detection. Integrates camera feeds with localized microcontrollers to trigger automated fluid cleaning systems.
+          </p>
         </div>
-        <p class="text-slate-300 text-sm mb-4">
-          Integrated camera detection using Convolutional Neural Networks (CNN) to automate waste detection and trigger targeted mechanical cleaning in automated pigpen systems.
-        </p>
-        <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400 mb-6">
-          <span class="bg-slate-900 px-2 py-1 rounded">Python</span>
-          <span class="bg-slate-900 px-2 py-1 rounded">OpenCV/CNN</span>
-          <span class="bg-slate-900 px-2 py-1 rounded">Raspberry Pi/Arduino</span>
-          <span class="bg-slate-900 px-2 py-1 rounded">IoT Relays</span>
+        <div>
+          <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400 mb-4">
+            <span class="bg-slate-800 px-2 py-1 rounded">Python</span>
+            <span class="bg-slate-800 px-2 py-1 rounded">TensorFlow / OpenCV</span>
+            <span class="bg-slate-800 px-2 py-1 rounded">Raspberry Pi</span>
+            <span class="bg-slate-800 px-2 py-1 rounded">IoT Relays</span>
+          </div>
         </div>
-        <a href="#" class="text-emerald-400 hover:underline text-sm font-semibold flex items-center gap-1">Source Code & Architecture &rarr;</a>
       </div>
 
       <!-- Project 2: Hospital Booking System -->
-      <div class="bg-slate-800/60 border border-slate-700 p-6 rounded-xl hover:border-emerald-500/50 transition">
-        <div class="flex justify-between items-start mb-4">
-          <h3 class="text-xl font-bold text-white">Hospital Appointment & Prescription Management System</h3>
-          <span class="text-xs bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2 py-1 rounded">Software System</span>
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col justify-between hover:border-emerald-500/50 transition glow">
+        <div>
+          <div class="h-48 bg-slate-800 rounded-lg mb-6 overflow-hidden border border-slate-700 flex items-center justify-center">
+            <img src="project-hospital.jpg" alt="Hospital Booking System" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/600x400?text=Hospital+Booking+System'"/>
+          </div>
+          <span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/20">Software Architecture</span>
+          <h3 class="text-xl font-bold text-white mt-3 mb-2">Hospital Booking & Prescription System</h3>
+          <p class="text-slate-300 text-sm mb-4">
+            Secure multi-tier system built to streamline patient appointment scheduling and prescription dispatches in real-time while maintaining backend database integrity.
+          </p>
         </div>
-        <p class="text-slate-300 text-sm mb-4">
-          Database-driven booking and prescription workflow software streamline doctor schedules, patient queueing, and digital pharmacy dispatching.
-        </p>
-        <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400 mb-6">
-          <span class="bg-slate-900 px-2 py-1 rounded">C++ / Java / Python</span>
-          <span class="bg-slate-900 px-2 py-1 rounded">SQL Database</span>
-          <span class="bg-slate-900 px-2 py-1 rounded">GUI Framework</span>
+        <div>
+          <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400 mb-4">
+            <span class="bg-slate-800 px-2 py-1 rounded">Java / NetBeans</span>
+            <span class="bg-slate-800 px-2 py-1 rounded">MySQL</span>
+            <span class="bg-slate-800 px-2 py-1 rounded">GUI Design</span>
+          </div>
         </div>
-        <a href="#" class="text-emerald-400 hover:underline text-sm font-semibold flex items-center gap-1">Source Code & Documentation &rarr;</a>
       </div>
 
       <!-- Project 3: Bus Terminal Ticketing System -->
-      <div class="bg-slate-800/60 border border-slate-700 p-6 rounded-xl hover:border-emerald-500/50 transition">
-        <div class="flex justify-between items-start mb-4">
-          <h3 class="text-xl font-bold text-white">Bus Terminal Ticketing & Route Scheduling System</h3>
-          <span class="text-xs bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2 py-1 rounded">Desktop / Web Application</span>
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col justify-between hover:border-emerald-500/50 transition glow">
+        <div>
+          <div class="h-48 bg-slate-800 rounded-lg mb-6 overflow-hidden border border-slate-700 flex items-center justify-center">
+            <img src="project-bus.jpg" alt="Bus Terminal Ticketing System" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/600x400?text=Bus+Terminal+Ticketing+System'"/>
+          </div>
+          <span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/20">Database & Logistics</span>
+          <h3 class="text-xl font-bold text-white mt-3 mb-2">Bus Terminal Ticketing System</h3>
+          <p class="text-slate-300 text-sm mb-4">
+            Logic-driven ticketing solution designed to optimize route scheduling, fare calculations, seat distribution, and passenger logging to reduce terminal congestion.
+          </p>
         </div>
-        <p class="text-slate-300 text-sm mb-4">
-          Optimized seat allocation and passenger reservation platform managing real-time schedules, fare calculation, and terminal dispatch logging.
-        </p>
-        <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400 mb-6">
-          <span class="bg-slate-900 px-2 py-1 rounded">Object-Oriented Programming</span>
-          <span class="bg-slate-900 px-2 py-1 rounded">Relational DB</span>
-          <span class="bg-slate-900 px-2 py-1 rounded">UI Design</span>
+        <div>
+          <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400 mb-4">
+            <span class="bg-slate-800 px-2 py-1 rounded">Java / C++</span>
+            <span class="bg-slate-800 px-2 py-1 rounded">phpMyAdmin</span>
+            <span class="bg-slate-800 px-2 py-1 rounded">Relational Databases</span>
+          </div>
         </div>
-        <a href="#" class="text-emerald-400 hover:underline text-sm font-semibold flex items-center gap-1">Source Code & Setup &rarr;</a>
       </div>
 
-      <!-- Technical Capability Card -->
-      <div class="bg-slate-800/60 border border-slate-700 p-6 rounded-xl hover:border-emerald-500/50 transition">
-        <div class="flex justify-between items-start mb-4">
-          <h3 class="text-xl font-bold text-white">Systems Troubleshooting & Hardware Diagnostics</h3>
-          <span class="text-xs bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2 py-1 rounded">Technical Support</span>
+      <!-- Project 4: Newton-Raphson Calculator -->
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col justify-between hover:border-emerald-500/50 transition glow">
+        <div>
+          <div class="h-48 bg-slate-800 rounded-lg mb-6 overflow-hidden border border-slate-700 flex items-center justify-center">
+            <img src="project-newton.jpg" alt="Newton Raphson Calculator" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/600x400?text=Newton-Raphson+Calculator'"/>
+          </div>
+          <span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/20">Numerical Methods & Algorithms</span>
+          <h3 class="text-xl font-bold text-white mt-3 mb-2">Newton-Raphson Numerical Calculator</h3>
+          <p class="text-slate-300 text-sm mb-4">
+            High-precision algorithmic calculator designed to solve non-linear engineering equations by automating iterative root-finding algorithms.
+          </p>
         </div>
-        <p class="text-slate-300 text-sm mb-4">
-          Experience in Tier 3 technical support: PC component level assembly, hardware diagnostics, network protocol troubleshooting, and system maintenance.
-        </p>
-        <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400 mb-6">
-          <span class="bg-slate-900 px-2 py-1 rounded">PC Troubleshooting</span>
-          <span class="bg-slate-900 px-2 py-1 rounded">Networking Fundamentals</span>
-          <span class="bg-slate-900 px-2 py-1 rounded">Root Cause Analysis</span>
+        <div>
+          <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400 mb-4">
+            <span class="bg-slate-800 px-2 py-1 rounded">C# / Visual Studio</span>
+            <span class="bg-slate-800 px-2 py-1 rounded">Algorithm Design</span>
+            <span class="bg-slate-800 px-2 py-1 rounded">Mathematical Modeling</span>
+          </div>
         </div>
-        <span class="text-slate-400 text-xs italic">Tier 3 Hardware & Systems Experience</span>
       </div>
 
     </div>
   </section>
 
-  <!-- Technical Skills -->
-  <section id="skills" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-800">
-    <h2 class="text-3xl font-bold mb-8 text-white"><span class="text-emerald-400">02.</span> Technical Stack & Tools</h2>
-    
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-slate-800/40 p-6 rounded-lg border border-slate-700">
-        <h3 class="font-bold text-emerald-400 mb-3">Programming & Software</h3>
+  <!-- Technical & Professional Skills Matrix -->
+  <section id="skills" class="max-w-6xl mx-auto px-6 py-20 border-t border-slate-800/80">
+    <h2 class="text-3xl font-bold mb-2 text-white">Skills & Technical Competencies</h2>
+    <p class="text-slate-400 mb-12">Categorized breakdown of technical stack, data engineering, and media tools.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Column 1 -->
+      <div class="bg-slate-900/60 p-6 rounded-xl border border-slate-800">
+        <div class="text-emerald-400 mb-4 text-xl"><i class="fas fa-code"></i></div>
+        <h3 class="font-bold text-white text-lg mb-3">Programming & Systems</h3>
         <ul class="text-slate-300 text-sm space-y-2">
-          <li>• C / C++ / Python</li>
-          <li>• HTML5 / CSS3 / JavaScript</li>
+          <li>• C / C++ / Java / Python</li>
           <li>• SQL Database Management</li>
-          <li>• Object-Oriented Design (OOD)</li>
+          <li>• Object-Oriented Programming (OOP)</li>
+          <li>• Algorithm Design & Optimization</li>
+          <li>• HTML5 / CSS3 / Web Basics</li>
         </ul>
       </div>
 
-      <div class="bg-slate-800/40 p-6 rounded-lg border border-slate-700">
-        <h3 class="font-bold text-emerald-400 mb-3">Hardware & Embedded Systems</h3>
+      <!-- Column 2 -->
+      <div class="bg-slate-900/60 p-6 rounded-xl border border-slate-800">
+        <div class="text-emerald-400 mb-4 text-xl"><i class="fas fa-microchip"></i></div>
+        <h3 class="font-bold text-white text-lg mb-3">Hardware & Analytics</h3>
         <ul class="text-slate-300 text-sm space-y-2">
           <li>• Microcontrollers (Arduino / ESP32)</li>
           <li>• Single-Board Computers (Raspberry Pi)</li>
-          <li>• Camera Modules & Sensor Integration</li>
-          <li>• PC Assembly & Hardware Diagnostics</li>
+          <li>• Data Analytics & Quality Auditing</li>
+          <li>• PC Troubleshooting & Assembly</li>
+          <li>• Network Diagnostics & Hardware Testing</li>
         </ul>
       </div>
 
-      <div class="bg-slate-800/40 p-6 rounded-lg border border-slate-700">
-        <h3 class="font-bold text-emerald-400 mb-3">Developer & Admin Tools</h3>
+      <!-- Column 3 -->
+      <div class="bg-slate-900/60 p-6 rounded-xl border border-slate-800">
+        <div class="text-emerald-400 mb-4 text-xl"><i class="fas fa-photo-video"></i></div>
+        <h3 class="font-bold text-white text-lg mb-3">Tools & Technical Media</h3>
         <ul class="text-slate-300 text-sm space-y-2">
-          <li>• Git & GitHub Version Control</li>
-          <li>• Canva / Adobe Premiere / CapCut</li>
-          <li>• Tier 3 Technical Support Tooling</li>
-          <li>• Google Workspace / Data Reporting</li>
+          <li>• Git / GitHub Version Control</li>
+          <li>• Advanced Excel (Pivot Tables, Pareto)</li>
+          <li>• Google Workspace Administration</li>
+          <li>• Adobe Premiere / CapCut / Filmora</li>
+          <li>• Graphic Design & UI Wireframing (Canva)</li>
         </ul>
       </div>
+
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-800 text-center">
-    <h2 class="text-3xl font-bold mb-4 text-white">Get In Touch</h2>
-    <p class="text-slate-300 max-w-md mx-auto mb-8">
-      I am currently seeking a Computer Engineering Internship opportunity. Feel free to reach out for my full resume or project source code.
-    </p>
-    <a href="mailto:hatamosa.antonette@gmail.com" class="inline-block bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-8 py-3 rounded-lg transition">
-      Email Antonette
-    </a>
+  <!-- Career Journey / Experience -->
+  <section id="experience" class="max-w-6xl mx-auto px-6 py-20 border-t border-slate-800/80">
+    <h2 class="text-3xl font-bold mb-2 text-white">Career Journey</h2>
+    <p class="text-slate-400 mb-12">Professional experience in technical support, quality analysis, and operations.</p>
+
+    <div class="space-y-8 max-w-4xl">
+
+      <!-- Job 1 -->
+      <div class="relative pl-8 border-l-2 border-slate-800 hover:border-emerald-500 transition">
+        <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-900 border-2 border-emerald-400"></div>
+        <span class="text-xs font-mono text-emerald-400">Quality Analyst</span>
+        <h3 class="text-xl font-bold text-white">QA Specialist & Data Analyst</h3>
+        <p class="text-slate-300 text-sm mt-2">
+          Conducted systematic quality audits, performance data tracking, and workflow optimizations. Applied statistical analysis to improve operational efficiency and standard operating procedures.
+        </p>
+      </div>
+
+      <!-- Job 2 -->
+      <div class="relative pl-8 border-l-2 border-slate-800 hover:border-emerald-500 transition">
+        <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-900 border-2 border-emerald-400"></div>
+        <span class="text-xs font-mono text-emerald-400">Technical Support Tier 3</span>
+        <h3 class="text-xl font-bold text-white">Tier 3 Technical Support Representative</h3>
+        <p class="text-slate-300 text-sm mt-2">
+          Managed advanced hardware and software troubleshooting, component diagnostics, system configuration, and high-level issue resolution for complex client setups.
+        </p>
+      </div>
+
+      <!-- Job 3 -->
+      <div class="relative pl-8 border-l-2 border-slate-800 hover:border-emerald-500 transition">
+        <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-900 border-2 border-emerald-400"></div>
+        <span class="text-xs font-mono text-emerald-400">Operations Management</span>
+        <h3 class="text-xl font-bold text-white">Operations Supervisor</h3>
+        <p class="text-slate-300 text-sm mt-2">
+          Supervised daily technical operations, coordinated team workflows, maintained operational quality metrics, and structured organizational communication channels.
+        </p>
+      </div>
+
+    </div>
   </section>
 
-  <footer class="text-center py-6 border-t border-slate-800 text-slate-500 text-xs">
-    Designed & Built by Antonette Hatamosa • Hosted on GitHub Pages
-  </footer>
+  <!-- Footer / Contact -->
+  <section id="contact" class="max-w-6xl mx-auto px-6 py-20 border-t border-slate-800/80 text-center">
+    <h2 class="text-3xl font-bold mb-4 text-white">Let's Connect</h2>
+    <p class="text-slate-300 max-w-xl mx-auto mb-8">
+      Open for Computer Engineering internship positions. Feel free to reach out to discuss my technical projects or request my complete CV.
+    </p>
+    
+    <div class="flex justify-center gap-6 mb-12">
+      <a href="mailto:hatamosa.antonette@gmail.com" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-8 py-3 rounded-lg transition">
+        <i class="fas fa-envelope mr-2"></i> Send Email
+      </a>
+    </div>
+
+    <div class="flex justify-center space-x-6 text-slate-400 text-xl mb-8">
+      <a href="https://github.com/antonette-hatamosa" target="_blank" class="hover:text-emerald-400 transition"><i class="fab fa-github"></i></a>
+      <a href="#" target="_blank" class="hover:text-emerald-400 transition"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+    <p class="text-slate-600 text-xs font-mono">
+      © Antonette P. Hatamosa • Computer Engineering Portfolio • Hosted on GitHub Pages
+    </p>
+  </section>
 
 </body>
 </html>
